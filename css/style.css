@@ -1,0 +1,599 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family:'Roboto',sans-serif;
+    margin: 0px;
+}
+.design{
+    padding:0px 0px 0px 70px;
+}
+nav ul {
+    display: flex;
+    justify-content:space-between;
+    width: 400px;
+    padding:0px 60px 0px 0px;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    color:#1293D4;
+}
+nav{
+    margin:10px;
+}
+span{
+    color:#1E86D4;
+}
+h1{
+    color:white;
+}
+header{
+    display:flex;
+    background-color:black;
+    font-size:13px;
+    padding:0px 50px 0px 50px;
+    justify-content: space-between;
+    border-bottom:4px solid #1293D4
+}
+footer{
+    background-color:#1293D4;
+    height: 20px;
+    text-align:center;
+    padding: 45px;
+    color:white;
+}
+.center{
+    display:flex;
+    background-color:black;
+    justify-content:space-between;
+    align-items: center;
+    padding:0px 200px 0px 200px;
+}
+.textoSub{
+    color:white;
+}
+input#email{
+    width:250px;
+    padding:8px;
+}
+button{
+    background-color:#F24822;
+    border:none;
+    color: white;
+    padding:11px;
+}
+.imagenPortada{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height:500px;
+    background:url(../images/cabecera.jpg) 0 -400px;
+    background-size: cover;
+}
+.textoImage{
+    color: white;
+    font-size:50px;
+}
+.parrafoImage{
+    color: white;
+    font-size:20px;
+}
+.temas{
+    margin-top:50px;
+}
+.contTemas{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+.imagenes{
+    justify-content:center;
+    text-align: center;
+}
+/* NOSOTROS */
+.sectionNosotros{
+    display:flex;
+    justify-content:space-around;
+    padding:20px
+}
+.tituloNosotros{
+    color:black;
+}
+.Sparrafo{
+    display:flex;
+    background-color:#35424A;
+    justify-content:space-between;
+    padding:10px 10px 10px 10px;
+    color: white;
+    width: 86%;
+    font-size:20px
+}
+.Pparrafo{
+    font-size: 20px;
+    display:flex;
+    justify-content:space-between;
+    padding:10px 10px 10px 0px;
+    width: 86%;
+}
+.tituloRigth{
+    color: white;
+}
+.parrafoRigth{
+    color: white;
+}
+.nosotrosText{
+    background-color:#35424A;
+    justify-content:space-between;
+    padding:10px 10px 10px 10px;
+    width:1150px;
+    height:260px;
+}
+.sectionNosotros{
+    padding-left: 179px;
+    padding-right: 184px;
+}
+.imagenCafe{
+    width:1024px;
+}
+/* SERVICIOS */
+.CampoTextos{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    height:700px;
+}
+.primerTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+}
+.text{
+    color: black;
+}
+.cuadros{
+    background-color: #dddddd;
+    border: 1px solid #cecece;
+    text-align: justify;
+    width: 880px;
+    height: 173px;
+    padding: 13px;
+}
+.cuadroDeTextos{
+    background-color: #dddddd;
+    border: 1px solid #cecece;
+    text-align: justify;
+    width: 880px;
+    padding: 13px;
+    height: 173px;
+}
+.segundoEspacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #35424A;
+    text-align: justify;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+}
+/* CONTACTO */
+.textoDerecha{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+input#name{
+    width: 900px;
+    height: 40px;
+}
+input#emaiil{
+    width: 900px;
+    height: 40px;
+}
+input#phone{
+    width: 900px;
+    height: 40px;
+}
+input#cell{
+    width: 900px;
+    height: 40px;
+}
+textarea{
+    width: 900px;
+    height: 130px;
+}
+.campoMapa{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.botonContacto{
+    width: 890px;
+    height: 40px;
+    color: white;
+    background-color: #E8491D;
+    border: none;
+    border: 2px solid rgb(194, 52, 1);
+}
+.imagenMapa{
+    width: 420px;
+}
+.textFirst{
+    background-color: #35424A;
+    text-align: justify;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+}
+/*MEDIA QUARES*/
+@media(max-width:1200px){
+    input#email{
+        width: 180px;;
+        padding:8px;
+    }
+    .imagenPortada{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 500px;
+        background: url(../images/cabecera.jpg) 0 -168px;
+        background-size: cover;
+    }
+    .imagenes{
+        /* display: flex; */
+        justify-content:flex-start;
+        text-align: center;
+        font-size: 9px;
+    }
+    .contTemas{
+        flex-flow: row wrap;
+        justify-content:space-between;
+    }
+    .imagePrograms{
+        width: 80px;
+        height: 80px;
+    }
+    /* NOSOTROS */
+    .sectionNosotros{
+        display:flex;
+        justify-content:space-around;
+        padding:20px
+    }
+    .Sparrafo{
+        width: 85%;
+        font-size:18px;
+    }
+    .Pparrafo{
+        font-size: 18px;
+        width: 85%;
+    }
+    .nosotrosText{
+        width:1150px;
+        height:500px;
+    }
+    .sectionNosotros{
+        padding-left: 179px;
+        padding-right: 184px;
+    }
+    .imagenCafe{
+        width: 850px;;
+    }
+    /* SERVICIOS */
+    .CampoTextos{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        height:700px;
+    }
+    .primerTexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 500px;
+    }
+    .text{
+        font-size: 17px;
+    }
+    .cuadros{
+        width: 596px;
+        height: 165px;
+    }
+    .cuadroDeTextos{
+        width: 880px;
+        padding: 13px;
+        height: 173px;
+    }
+    .segundoEspacio{
+        width: 301px;
+        height: 250px;
+    }
+    /* CONTACTO */
+    input#name{
+        width: 545px;
+        height: 40px;
+    }
+    input#emaiil{
+        width: 545px;
+        height: 40px;
+    }
+    input#phone{
+        width: 545px;
+        height: 40px;
+    }
+    input#cell{
+        width: 545px;
+        height: 40px;
+    }
+    textarea{
+        width: 545px;
+        height: 130px;
+    }
+    .botonContacto{
+        width: 545px;
+        height: 40px;
+    }
+    .imagenMapa{
+        width: 300px;
+    }
+    .textFirst{
+        width: 96%;
+        height: 223px;
+    }
+    .parrafoRigth{
+        font-size: 16px;
+    }
+    .campoMapa{
+        width: 390px;
+        height: 508px;
+    }
+}
+
+@media(max-width:768px){
+    input#email{
+        width: 180px;
+    }
+    .center{
+        padding:0px 80px 0px 80px;
+    }
+    .imagenPortada{
+        height: 500px;
+        background: url(../images/cabecera.jpg) 0 0px;
+        background-size: cover;
+    }
+    nav{
+        margin: 29px;
+    }
+    .parrafoImage{
+        font-size: 18px;
+    }
+    .imagenes{
+        font-size: 7px;
+    }
+    .imagePrograms{
+        width: 80px;
+        height: 80px;
+    }
+    /* NOSOTROS */
+    .parrafoRigth{
+        font-size: 12px;
+    }
+    .sectionNosotros{
+        display:flex;
+        justify-content:space-around;
+        padding:20px;
+    }
+    .Sparrafo{
+        width: 85%;
+        font-size:16px;
+    }
+    .Pparrafo{
+        font-size: 16px;
+        width: 85%;
+    }
+    .nosotrosText{
+        width:1150px;
+        height:278px;
+    }
+    .imagenCafe{
+        width: 580px;;
+    }
+    /* SERVICIOS */
+    .CampoTextos{
+        padding: 20px;
+        height:700px;
+    }
+    .primerTexto{
+        width: 500px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .cuadros{
+        width: 596px;
+        height: 146px;
+    }
+    .cuadroDeTextos{
+        width: 880px;
+        padding: 13px;
+        height: 173px;
+    }
+    .segundoEspacio{
+        width: 208px;
+        height: 200px;
+    }
+    /* CONTACTO */
+    input#name{
+        width: 400px;
+        height: 40px;
+    }
+    input#emaiil{
+        width: 400px;
+        height: 40px;
+    }
+    input#phone{
+        width: 400px;
+        height: 40px;
+    }
+    input#cell{
+        width: 400px;
+        height: 40px;
+    }
+    textarea{
+        width: 400px;
+        height: 130px;
+    }
+    .botonContacto{
+        width: 400px;
+        height: 40px;
+    }
+    .imagenMapa{
+        width: 300px;
+    }
+    .textFirst{
+        width: 96%;
+        height: 223px;
+    }
+    .campoMapa{
+        width: 300px;
+        height: 508px;
+    }
+}
+
+@media(max-width:576px){
+    header{
+        width: 83%;
+    }
+    input#email{
+        width: 117px;
+    }
+    .design{
+        padding: 0px 0px 0px 0px;
+    }
+    .center{
+        width: 73%;
+        padding:5px 80px 5px 80px;
+    }
+    .textoSub{
+        font-size: 15px;
+    }
+    nav ul{
+        width: 310px;
+    }
+    .imagenPortada{
+        width: 100%;
+    }
+    nav{
+        margin: 29px;
+    }
+    .parrafoImage{
+        font-size: 17px;
+    }
+    .imagenes{
+        font-size: 12px;
+    }
+    .imagePrograms{
+        width: 80px;
+        height: 80px;
+    }
+    .contTemas{
+        margin-left: 85px;
+    }
+    footer{
+        width: 85%;
+    }
+    /* NOSOTROS */
+    .parrafoRigth{
+        font-size: 12px;
+    }
+    .sectionNosotros{
+        display:flex;
+        justify-content:space-around;
+        padding:20px;
+    }
+    .Sparrafo{
+        width: 85%;
+        font-size:13px;
+    }
+    .Pparrafo{
+        font-size: 13px;
+        width: 85%;
+    }
+    .nosotrosText{
+        width:1150px;
+        height:196px;
+    }
+    .imagenCafe{
+        width: 353px;;
+    }
+    /* SERVICIOS */
+    .CampoTextos{
+        padding: 20px;
+        height:700px;
+    }
+    .primerTexto{
+        width: 500px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .cuadros{
+        width: 285px;
+        height: 175px;
+    }
+    .cuadroDeTextos{
+        width: 880px;
+        padding: 13px;
+        height: 173px;
+    }
+    .segundoEspacio{
+        width: 192px;
+        height: 205px;
+    }
+    /* CONTACTO */
+    input#name{
+        width: 255px;
+        height: 40px;
+    }
+    input#emaiil{
+        width: 255px;
+        height: 40px;
+    }
+    input#phone{
+        width: 255px;
+        height: 40px;
+    }
+    input#cell{
+        width: 255px;
+        height: 40px;
+    }
+    textarea{
+        width: 255px;
+        height: 130px;
+    }
+    .botonContacto{
+        width: 255px;
+        height: 40px;
+    }
+    .imagenMapa{
+        width: 280px;
+    }
+    .textFirst{
+        width: 100%;
+        height: 169px;
+    }
+    .campoMapa{
+        width: 260px;
+        height: 508px;
+    }
+}
